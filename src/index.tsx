@@ -8,13 +8,14 @@ import Name from './component/Name';
 import Message from './component/Message';
 import Parent from './component/ContainerSample';
 import Page from './component/ContextSample';
+import Counter from './component/Counter';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Page />
+    <Counter initialValue={1}/>
   </React.StrictMode>
 );
 
